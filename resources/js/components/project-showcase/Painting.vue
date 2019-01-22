@@ -1,8 +1,9 @@
 <template>
     <div>
-        ddddddd
+        ding
     </div>
 </template>
+
 <script>
-    console.log('qpqpq222p');
+
 </script>
