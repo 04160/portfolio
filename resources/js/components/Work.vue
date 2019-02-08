@@ -4,6 +4,7 @@
             <painting></painting>
             <painting></painting>
             <painting></painting>
+
         </div>
     </div>
 </template>

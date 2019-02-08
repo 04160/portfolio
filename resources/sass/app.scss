@@ -14,40 +14,91 @@ $background: #53868e;
 
 body {
   margin:0 auto;
-  min-width: 100vw;
-  min-height: 100vh;
+  font-size:16px;
 
   background-color: $background;
-  .site-wrap {
-    margin:0 auto;
-    display: flex;
-    //flex-direction: column;
+}
 
-    .container {
-      //flex-direction:column;
-      //flex-basis: 100%;
+.container {
+  width: 90%;
+}
+.row {
+  display: flex;
+  text-align:center;
+  margin: 0 auto;
+  .painting {
+    margin: 5% auto;
+    //width: 30%;
+    height: 90%;
+    text-align: center;
+    flex-wrap: nowrap;
+    .title {
+
+    }
+    .outer-border {
+      border: solid black 2px;
+      .middle-border {
+        margin: 0.7rem;
+        border: solid green 2px;
+        .inner-border {
+          margin: 0.5rem;
+          border: solid red 2px;
+          .painting-image {
+            object-fit: cover;
+            width: 100%;
+            img {
+              width: 100%;
+
+            }
+          }
+        }
+      }
+    }
+
+    .description {
+      width: 90%;
       margin: 0 auto;
+      border: 1px solid blue;
+      .description-inner-border {
+        margin: 0.5rem;
+        border: 1px solid orange;
+        .description-text {
+          margin: 0.3rem;
+
+        }
+      }
     }
   }
+}
 
-  .navbar {
-    //display:flex;
-    z-index: 200;
-    background-color: lighten($background, 30%);
-    list-style-type: none;
-    //flex: 0 0 20vw;
-    //flex-direction:column;
-    //flex-basis: 100%;
-    top: 50%;
+.site-wrap {
+  margin:0 auto;
+  display: flex;
 
-    position:absolute;
-    padding: 1em;
+  .container {
+    margin: 0 auto;
   }
+}
+
+.navbar {
+  z-index: 200;
+  background-color: lighten($background, 30%);
+  list-style-type: none;
+  top: 50%;
+
+  position:absolute;
+  padding: 1em;
 }
 
 @media (min-width: 768px) {
   body {
     background-color: darken($background, 5%);
+  }
+  .container {
+    width:98%;
+    .row {
+
+    }
   }
 }
 
@@ -55,10 +106,22 @@ body {
   body {
     background-color: darken($background, 10%);
   }
+  .container {
+    width:90%;
+    .row {
+
+    }
+  }
 }
 
 @media (min-width: 1200px) {
   body {
     background-color: darken($background, 15%);
+  }
+  .container {
+    width: 80%;
+    .row {
+
+    }
   }
 }
