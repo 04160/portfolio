@@ -4,7 +4,10 @@
             <painting></painting>
             <painting></painting>
             <painting></painting>
-
+            <div class="spotlight-wrap">
+                <div class="spotlight"></div>
+                <div class="spotlight"></div>
+            </div>
         </div>
     </div>
 </template>
